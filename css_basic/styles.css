@@ -6,6 +6,13 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+.logo {
+    font-size: 36px; /* Make the logo bigger */
+    color: #4CAF50;  /* Green color for the logo */
+    font-weight: bold;
+    margin-right: 10px; /* Space between the logo and the first list item */
+}
+
 
 /* Apply Flexbox to <main> */
 main {
