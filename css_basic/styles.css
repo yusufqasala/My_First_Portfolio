@@ -42,3 +42,25 @@ header, footer {
 footer {
   margin-top: auto; /* Pushes footer to the bottom */
 }
+/* Base styles for larger screens (this is the layout we set earlier) */
+body.works_on_smartphone main {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive styles for small screens (mobile devices) */
+@media screen and (max-width: 768px) {
+  body.works_on_smartphone main {
+    flex-direction: column; /* Stack article and aside vertically */
+  }
+
+  article, aside {
+    flex: auto; /* Allow both article and aside to take full width */
+    width: 100%;
+  }
+
+  header, footer {
+    text-align: center; /* Center the text on small screens */
+  }
+}
+
