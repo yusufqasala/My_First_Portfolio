@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #f4f4f9; /* Light grey background for the entire page */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Text color */
 }
 .logo {
     font-size: 36px; /* Make the logo bigger */
@@ -37,17 +40,74 @@ aside {
   padding: 20px;
   background-color: #f4f4f4;
 }
+article h1 {
+    color: #4CAF50; /* Green color for headings */
+    font-size: 28px;
+}
+
+article p {
+    line-height: 1.6; /* Line height for better readability */
+    font-size: 16px;
+    color: #555; /* Darker grey text for paragraphs */
+}
+button:hover, a:hover {
+    background-color: #4CAF50; /* Green background on hover */
+    color: white; /* White text on hover */
+}
+img {
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
 /* Style for <header> and <footer> */
 header, footer {
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  text-align: center;
+  background-color: #333; /* Dark background for the header */
+    color: white;  /* White text in the header */
+    padding: 15px 20px;
+    text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: white;  /* White text for links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    color: #4CAF50;  /* Change color to green on hover */
+}
+article, aside {
+    padding: 20px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+article {
+    background-color: white;
+    margin-right: 20px;
+}
+
+aside {
+    background-color: #f4f4f4;
 }
 
 footer {
-  margin-top: auto; /* Pushes footer to the bottom */
+  background-color: #333; /* Same dark background for the footer */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
 }
 /* Base styles for larger screens (this is the layout we set earlier) */
 body.works_on_smartphone main {
